@@ -5,19 +5,19 @@
     "build": "turbo run build",
     "postinstall": "turbo run build '--filter=./packages/*'",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
+    "fmtlint": "biome format --write ./ && biome lint --apply ./ ",
+    "format": "biome format ./",
+    "format:fix": "biome format --write ./",
     "web": "turbo run dev --filter web"
   },
   "devDependencies": {
-    "prettier": "^3.1.1",
+    "@biomejs/biome": "1.7.3",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "bun@1.1.8",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "workspaces": ["apps/*", "packages/*"],
+  "trustedDependencies": ["@biomejs/biome", "core-js", "esbuild"]
 }
