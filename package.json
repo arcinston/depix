@@ -8,6 +8,7 @@
     "fmtlint": "biome format --write ./ && biome lint --apply ./ ",
     "format": "biome format ./",
     "format:fix": "biome format --write ./",
+    "android": "cd ./apps/native && bun android",
     "web": "turbo run dev --filter web"
   },
   "devDependencies": {

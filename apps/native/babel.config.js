@@ -6,7 +6,10 @@ module.exports = (api) => {
 
   return {
     presets: [
-      ['babel-preset-expo', { jsxImportSource: 'nativewind',lazyImports: true }],
+      [
+        'babel-preset-expo',
+        { jsxImportSource: 'nativewind', lazyImports: true },
+      ],
       'nativewind/babel',
     ],
 

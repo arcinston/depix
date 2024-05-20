@@ -29,4 +29,4 @@ This Turborepo has some additional tools already setup for you:
 
 - [Expo](https://docs.expo.dev/) for native development
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [Prettier](https://prettier.io) for code formatting
+- [Biome](https://biomejs.dev) for code formatting
