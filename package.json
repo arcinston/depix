@@ -3,8 +3,10 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "postinstall": "turbo run build '--filter=./packages/*'",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
+    "web": "turbo run dev --filter web"
   },
   "devDependencies": {
     "prettier": "^3.1.1",

@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.46",
-    "@repo/typescript-config": "*",
+    "@repo/typescript-config": "workspace:*",
     "tsup": "^8.0.1",
     "typescript": "^5.4.5"
   },
